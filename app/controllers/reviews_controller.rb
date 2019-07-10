@@ -5,7 +5,7 @@ class ReviewsController < ApplicationController
     # we need @restaurant in our `simple_form_for`
     @restaurant = Restaurant.find(params[:restaurant_id])
     @review = Review.new
- end
+  end
 
   def create
     @review = Review.new(review_params)
